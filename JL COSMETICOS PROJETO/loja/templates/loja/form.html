@@ -1,0 +1,1 @@
+{% extends 'loja/base.html' %}{% block content %}<div class="row justify-content-center"><div class="col-lg-8"><div class="card p-4"><h2>{{ titulo }}</h2><form method="post" novalidate>{% csrf_token %}{{ form.as_p }}<button class="btn btn-primary">Salvar</button> <a class="btn btn-secondary" href="{% url voltar %}">Cancelar</a></form></div></div></div>{% endblock %}
